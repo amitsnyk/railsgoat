@@ -12,7 +12,7 @@ gem "coffee-rails"
 gem "execjs"
 gem "foreman"
 gem "jquery-fileupload-rails"
-gem "jquery-rails"
+gem "jquery-rails", ">= 4.4.0"
 gem "minitest"
 gem "powder" # Pow related gem
 gem "pry-rails" # not in dev group in case running via prod/staging @ a training
@@ -52,7 +52,7 @@ group :development, :test, :mysql do
   gem "database_cleaner"
   gem "launchy"
   gem "poltergeist"
-  gem "rspec-rails", '4.0.0.beta3' # 4/26/2019: LOCKED DOWN
+  gem "rspec-rails", "4.0.0" # 4/26/2019: LOCKED DOWN
   gem "test-unit"
 end
 
